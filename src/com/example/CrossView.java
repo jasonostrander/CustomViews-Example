@@ -11,14 +11,14 @@ import android.util.Log;
 import android.view.View;
 
 
-public class ExampleCustomView extends View {
+public class CrossView extends View {
 
     private static final float DEFAULT_SIZE = 100;
     private Paint mPaint;
     Path mPath;
     float mRotation = 0f;
 
-    public ExampleCustomView(Context context, AttributeSet attrs) {
+    public CrossView(Context context, AttributeSet attrs) {
         super(context);
         
         mPaint = new Paint();
@@ -46,7 +46,6 @@ public class ExampleCustomView extends View {
     
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        Log.v("jason", "onMeasure");
         setMeasuredDimension(calculateMeasure(widthMeasureSpec),
                 calculateMeasure(heightMeasureSpec));
     }
