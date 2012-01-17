@@ -13,7 +13,7 @@ import android.view.View;
 
 public class CrossView extends View {
 
-    private static final float DEFAULT_SIZE = 100;
+    private static final int DEFAULT_SIZE = 100;
     private Paint mPaint;
     Path mPath;
     float mRotation = 0f;
